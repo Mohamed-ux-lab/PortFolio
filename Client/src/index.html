@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PorteFolio MK</title>
     <link rel="stylesheet" href="/Client/src/style/style.css">
+    <link rel="stylesheet" href="./assets/FontAwesome/css/all.css">
     <script type="module" src="./js/index.js" defer></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="header">
@@ -15,12 +15,12 @@
         <nav class="navbar">
             <a href="#home" class="active">Acceuil</a>
             <a href="#skills">Compétence</a>
-            <a href="#projets">Projet</a>
+            <a href="#parcour">Projet</a>
             <a href="#about">A propos</a>
-            <a href="#contacts"><i class="fas fa-file-contract"></i></a>
+            <a href="#contacts"><i class="fa-solid fa-user"></i> Contact</a>
         </nav>
     </header>
-    <section id="home">
+    <section id="home" data-spy>
         <div class="home-content">
             <h1>Salut, je suis Mohamed</h1>
             <h3>Developpeur web</h3>
@@ -31,7 +31,7 @@
             </div>
         </div>
     </section>
-    <section id="skills">
+    <section id="skills" data-spy>
         <div class="card">
             <div class="img">
             </div>
@@ -69,8 +69,48 @@
             <div class="content">Bonne connaissance de l'outil No-Code wordpress. Un CMS puissant avec 40% des sites web crée grâce à lui.</div>
         </div>
     </section>
-    <section id="projets">ASGFa;osfnc;oe</section>
-    <section id="about">a;erouhfnc;samc</section>
-    <section id="contacts">s.djnfcoiae</section>
+    <section id="parcour" data-spy>
+        <div class="contents">
+            <h3>Mes Parcours Scolaire</h3>
+            <ul class="list-parcour">
+                <li><b>2022-2023</b> Licence 3 Informatique de Gestion<br> (Institut privée smart IPSMART).</li>
+                <li><b>2022-2023</b> Attestation Marathon Numérique<br> (ODC Orange digital center).</li>
+                <li><b>2020-2022</b> Dîplome universitaire de technicien DUT<br> (Institut privée smart IPSMART).</li>
+                <li><b>2019-2020</b> Baccalauréat Science Social<br> (LBAC Baminata Coulibaly).</li>
+            </ul>
+        </div>
+        <div class="content-image">
+            <img src="./assets/images/education-.png" alt="">
+        </div>
+    </section>
+    <section id="about" data-spy>
+        <div class="profile">
+            <div class="moi-img">
+                <!-- <img src="./assets/images/User-me2.png" alt="Image de moi !"> -->
+            </div>
+            <div class="moi">
+                <i class="fa-solid fa-5x fa-user"></i>
+                <p>Salut, Je suis M. Koureissy Mohamed administrateur de donnée et développeur web. Passionnéear le monde de la technologie avec une évolution accélerer, j'aimerais être un incontournable dans ce domaine. Parceque un informaticien se doit être un polyvalent dans tout les branches et maître dans une seule domaine. Ceci est mon rêve à moi</p>
+            </div>
+        </div>
+    </section>
+    <section id="contacts" data-spy>
+        <h1>Contact</h1>
+            <form action="submit" method="post">
+                <label for="name">Votre Nom</label>
+                <input type="text" name="name" id="name" required>
+                
+                <label for="lastName">Prénom</label>
+                <input type="text" name="lastName" id="lastName" required>
+
+                <label for="emails">Email</label>
+                <input type="email" name="emails" id="emails" placeholder="votre email en miniscule..." required>
+
+                <label for="message">Votre message...</label>
+                <input type="text" name="message" id="message">
+
+                <button type="submit">Envoyer</button>
+            </form>
+    </section>
 </body>
 </html>
