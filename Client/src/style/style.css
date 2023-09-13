@@ -203,6 +203,13 @@ body {
     padding-bottom: 30px;
     color: #fff;
 }
+
+.skills-title {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
 .card {
     background: transparent;
     height: 200px;
@@ -294,8 +301,7 @@ body {
 
 .parcour-title {
     text-align: center;
-    font-size: 1.9rem;
-    border: 2px solid #fff;
+    font-size: 3rem;
     padding-bottom: 50px;
 }
 
@@ -310,6 +316,7 @@ body {
     justify-content: center;
     line-height: 40px;
     font-size: 1.2rem;
+    padding-top: 85px;
 }
 
 .list-parcour {
@@ -324,29 +331,28 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #fff;
-    color: #171742;
-    height: auto;
-    width: 100%;
+    background: #171742;
+    color: #fff;
     padding: 20px 100px;
 }
 
 #contacts h1 {
     text-align: center;
-    font-size: 2.5rem;
-    padding-bottom: 20px;
+    font-size: 3rem;
+    padding-bottom: 40px;
 }
 
-#contacts form {
+.formulaire {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
     gap: 20px;
     justify-content: center;
     align-content: center;
 }
 
-#contacts form button {
+.formulaire button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -357,6 +363,7 @@ body {
     border-radius: 16px;
     width: 200px;
     height: 40px;
+    margin-top: 20px;
     font-weight: bold;
     border: 2px solid #333333;
     transition: 0.5s;
@@ -369,3 +376,11 @@ body {
     color: #fff;
     background-color: #001b29;
 }
+
+.formulaire input {
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #434343;
+    background: transparent;
+}
+
