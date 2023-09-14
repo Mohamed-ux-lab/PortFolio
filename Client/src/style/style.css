@@ -8,6 +8,7 @@
 
 :root {
     --couleur-text: rgba(0, 27, 41, 0.8);
+    --couleurPrimaire: #cecaca;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: #001b29bf;
+    background: #00283d;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -212,10 +213,17 @@ body {
 
 .card {
     background: transparent;
-    height: 200px;
+    min-height: 200px;
     width: 250px;
     border: 1px solid #fff;
     border-radius: 10%;
+    transition: all 0.5s ease-out;
+}
+
+.card:hover{
+    background: #fff;
+    color: var(--couleur-text);
+    transform: scale(1);
 }
 
 .img {
@@ -238,14 +246,15 @@ body {
     width: 100%;
     height: 10%;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .content {
     width: 100%;
     height: 30%;
     padding: 0 20px;
-    font-size: 0.6rem;
+    padding-top: 5px;
+    font-size: 0.7rem;
     text-align: center;
     text-transform: capitalize;
 }
@@ -297,12 +306,13 @@ body {
     display: flex;
     padding: 30px 20px;
     flex-direction: column;
+    height: 500px;
 }
 
 .parcour-title {
     text-align: center;
     font-size: 3rem;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 
 .parcour-image {
@@ -323,8 +333,8 @@ body {
     display: flex;
     flex-direction: row;
     list-style: none;
-    padding-left: 20px;
-    border-left: 2px solid #fff;
+    justify-content: center;
+    align-content: center;
 }
 
 .list-parcour li b {
@@ -335,12 +345,66 @@ body {
 
 .list-parcour li {
     border: none;
+    height: 200px;
+    width: 250px;
     border-radius: 25px;
     padding: 0 10px;
     padding-top: 20px;
     margin: 0 5px;
     text-align: center;
     background: rgba(0, 27, 41, 0.8);
+}
+
+#experiences{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75vh;
+    color: #fff;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.exps-title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 3rem;
+}
+
+.list-exp{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+.exps{
+    width: 200px;
+    height: auto;
+    background: rgba(21, 24, 83, 0.623);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 10px;
+    transition: all 0.5s ease-out;
+}
+
+.exps:hover{
+    color: #111;
+    background: #cac9d7;
+    transform: scale(1.1);
+}
+
+.exps h2{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px 5px;
+}
+
+.exps ul{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    list-style: none;
 }
 
 #contacts {
@@ -400,3 +464,35 @@ body {
     background: transparent;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 24, 36, 0.8);
+}
+
+footer .div-social{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+}
+
+footer .div-social a{
+    text-decoration: none;
+}
+
+footer .div-social i{
+    padding: 10px 10px;
+    margin: 10px 0;
+    transition: all 0.5s ease-out;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+}
+
+footer .div-social i:hover{
+    transform: scale(1);
+    background-color: #fff;
+    color: var(--couleur-text);
+}
