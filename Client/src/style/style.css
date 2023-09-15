@@ -65,6 +65,17 @@ body {
     border-radius: 32px;
 }
 
+.user-image{
+    width: 300px;
+    height: 250px;
+    margin-left: 125px;
+}
+
+.user-image img{
+    /* width: 100%; */
+    height: 100%;
+}
+
 .home-content {
     max-width: 600px;
 }
@@ -201,6 +212,7 @@ body {
     justify-content: center;
     justify-items: center;
     padding: 0 70px;
+    margin-top: 15px;
     padding-bottom: 30px;
     color: #fff;
 }
@@ -208,7 +220,11 @@ body {
 .skills-title {
     font-size: 3rem;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-width: 2px;
 }
 
 .card {
@@ -312,7 +328,11 @@ body {
 .parcour-title {
     text-align: center;
     font-size: 3rem;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #001b29;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-width: 2px;
 }
 
 .parcour-image {
@@ -370,6 +390,11 @@ body {
     margin-top: 20px;
     margin-bottom: 50px;
     font-size: 3rem;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #fff;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-width: 2px;
 }
 
 .list-exp{
@@ -381,7 +406,7 @@ body {
 .exps{
     width: 200px;
     height: auto;
-    background: rgba(21, 24, 83, 0.623);
+    background: rgba(6, 6, 15, 0.62);
     border: none;
     border-radius: 25px;
     padding: 10px 10px;
@@ -389,18 +414,29 @@ body {
 }
 
 .exps:hover{
-    color: #111;
-    background: #cac9d7;
+    color: #001b29;
+    background: #fff;
     transform: scale(1.1);
+}
+
+.list-taches li{
+    font-size: 0.5rem;
 }
 
 .exps h2{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 5px 5px;
 }
 
+.exps h3{
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
 .exps ul{
+    text-align: center;
     padding-top: 10px;
     padding-left: 5px;
     padding-right: 5px;
