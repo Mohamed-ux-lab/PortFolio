@@ -7,7 +7,7 @@
 }
 
 :root {
-    --couleur-text: rgba(0, 27, 41, 0.8);
+    --couleur-text: rgba(0, 27, 41, 1);
     --couleurPrimaire: #cecaca;
 }
 
@@ -221,10 +221,10 @@ body {
     font-size: 3rem;
     text-align: center;
     padding-bottom: 20px;
-    border-bottom: 2px solid #fff;
+    /* border-bottom: 2px solid #fff;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    border-bottom-width: 2px;
+    border-bottom-width: 2px; */
 }
 
 .card {
@@ -329,10 +329,10 @@ body {
     text-align: center;
     font-size: 3rem;
     padding-bottom: 15px;
-    border-bottom: 2px solid #001b29;
+    /* border-bottom: 2px solid #001b29;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    border-bottom-width: 2px;
+    border-bottom-width: 2px; */
 }
 
 .parcour-image {
@@ -391,10 +391,10 @@ body {
     margin-bottom: 50px;
     font-size: 3rem;
     padding-bottom: 15px;
-    border-bottom: 2px solid #fff;
+    /* border-bottom: 2px solid #fff;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    border-bottom-width: 2px;
+    border-bottom-width: 2px; */
 }
 
 .list-exp{
@@ -447,7 +447,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: var(--couleur-text);
     color: #fff;
     padding: 20px 100px;
 }
