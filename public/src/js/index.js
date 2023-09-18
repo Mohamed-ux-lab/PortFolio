@@ -1,3 +1,20 @@
+const burger_menu = document.querySelector('#responsive')
+const menu = document.querySelector('.navbar')
+const navLink = document.querySelectorAll('.nav-link')
+
+
+burger_menu.addEventListener("click", () => {
+    burger_menu.classList.toggle('active')
+    menu.classList.toggle('active')
+})
+
+navLink.forEach((navlink) => {
+    navlink.addEventListener("click", (e) => {
+        const active = menu.className
+        if(active.includes('active')) {menu.classList.remove('active')}
+        })
+})
+
 
 function scrollSpy() {
 
@@ -72,3 +89,4 @@ function scrollSpy() {
     }
 }
 scrollSpy()
+
